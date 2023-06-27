@@ -1,0 +1,121 @@
+PennController.ResetPrefix(null);
+
+//DebugOff();
+
+// BARRA DE PROGRESSO
+var progressBarText = "PROGRESSO";
+
+
+newTrial("questionario",
+         defaultText
+         .print()
+         .cssContainer({"font-size":"25px"})
+         ,
+         newText("idade", "Idade")
+         .cssContainer({"margin-bottom":"1em"})
+         ,
+         newTextInput("idadeResposta", "")
+         .cssContainer({"margin-bottom":"1em"})
+         .css("font-size", "25px")
+         .lines(0)
+         .size(70, 30)
+         .log()
+         .print()
+         ,
+         newButton("botao1", "OK")
+         .cssContainer({"margin-bottom":"3em"})
+         .css("font-size", "20px")
+         .print()
+         .wait(getTextInput("idadeResposta") 
+               .test.text(/^(1[8-9]|2[0-9]|3[0-9]|4[0-9]|5[0-9]|6[0-9]|7[0-9]|8[0-9]|9[0-9])$/) 
+               .failure(
+                 newText("failure1","To participate in the study, you need to have 18 years old or more. We thank your participation in our study!")
+                 .cssContainer({"margin-bottom":"1em", "color":"red", "font-size":"20px"})
+                 .print()
+               ))
+         ,
+         newText("nascimento", "Cidade de nascimento")
+         .cssContainer({"margin-bottom":"1em"}),
+         newTextInput("Digite a cidade em que você nasceu", "")
+         .cssContainer({"margin-bottom":"1em"})
+         .css("font-size", "25px")
+         .lines(0)
+         .size(70, 30)
+         .log()
+         .print()
+         .wait()
+         
+        
+         ,
+         newText("interpretação", "Qual é a sua interpretação da frase abaixo?")
+         .cssContainer({"margin-bottom":"1em"}),
+    
+         newScale("naturalidadeResposta", "<p style=font-size:20>opcaoa</p>", "<p style=font-size:20>opcaob</p>")
+         .cssContainer({"margin-bottom":"1em"})
+         .labelsPosition("right")
+         .vertical()
+         .log()
+         .print()
+         .wait()
+         , 
+         newText("frase1", "Qual é a sua interpretação da primeira frase abaixo?")
+    .cssContainer({"margin-bottom": "1em"}),
+
+newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
+    .cssContainer({"margin-bottom": "1em"})
+    .labelsPosition("right")
+    .vertical()
+    .log()
+    .print()
+    .wait()
+    ,
+
+// Repita os passos acima para as próximas 47 perguntas, alterando o número e o nome dos indicadores conforme necessário
+
+newText("frase48", "Qual é a sua interpretação da 48ª frase abaixo?")
+    .cssContainer({"margin-bottom": "1em"}),
+
+newScale("resposta48", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
+    .cssContainer({"margin-bottom": "1em"})
+    .labelsPosition("right")
+    .vertical()
+    .log()
+    .print()
+    .wait()
+
+         
+         
+)
+
+// Conclusão
+newTrial("agradecimento", 
+    newText("<h1>Agradecimentos!</h1>").print(),
+    newText("Neste experimento, você irá... (insira suas instruções aqui)").print(),
+    newText("As sessões de aplicação dos experimentos foram todas realizadas em um único equipamento notebook e ocorreram em diversos locais dos quatro campus visitados da UFF. O ambiente para que fosse realizada a sessão deveria ser tranquilo, onde o participante não tivesse sua atenção voltada para outro evento.").print().css("margin-bottom", "1em"),
+  newText("Desta feita, os locais eram pré-selecionados, sendo que em alguns casos foram disponibilizadas salas específicas para aplicação do experimento. Cada sessão reunia apenas um participante por vez, sendo que este, antes de iniciar as tarefas, preenchia um formulário com seus dados pessoais e assinava um Termo de Consentimento Livre e Esclarecido, assentindo em participar da pesquisa.").print().css("margin-bottom", "1em"),
+  newText("Após os procedimentos de preenchimento de formulários e assentimento, o participante sentava-se à frente do notebook e a ele eram dadas as explicações de como seria a aplicação do teste (era informado que a tecla de espaço, pintada de amarelo, servia para avançar nos segmentos das expressões até a frase se completar, enquanto a tecla ‘L’, pintada de vermelho, significava ‘Não’ à resposta, enquanto a tecla ‘S’, pintada de verde, significava ‘Sim’ à resposta).").print().css("margin-bottom", "1em"),
+  newText("Para que não houvesse qualquer dúvida durante a realização dos testes, foi realizada uma tarefa de aquecimento de modo que o participante se inteirasse de como seria o seu comportamento durante a aplicação da pesquisa. Durante esse aquecimento, o participante era informado de que não se tratava de uma pesquisa de opinião, mas sim uma análise de interpretação refinada de texto, sendo assim, as respostas ‘sim’ ou ‘não’ deveriam estar alinhadas com a expressão lida anteriormente e não com as suas convicções pessoais.").print().css("margin-bottom", "1em"),
+  newText("Em seguida ao aquecimento, dando seu consentimento ao prosseguimento do experimento, o participante iniciava a tarefa, que era fazer a leitura, em três segmentos, de uma expressão e, em seguida, responder ‘sim’ ou ‘não’ a uma pergunta apresentada.").print().css("margin-bottom", "1em"),
+  newText("As frases eram apresentadas em ordem aleatória a cada participante, devido ao procedimento de randomização automática programado para o experimento, de modo que não se tornava possível encontrar algum padrão de distribuição dos estímulos experimentais, de controle e distratores.").print().css("margin-bottom", "1em"),
+  newText("Como havia dois grupos formados num quadrado latino, os participantes integravam um grupo ou outro conforme a necessidade de equilibrar a quantidade de homens e mulheres em cada um dos grupos. Tal ação era definida a cada rodada do experimento, de modo que houve um controle adequado do total de participantes, distribuídos harmonicamente entre si.").print().css("margin-bottom", "1em"),
+  newText("É importante frisar que os participantes tomavam conhecimento que, durante a leitura segmentada autocadenciada, era necessária toda a atenção ao que estava sendo lido uma vez que, depois de passado um segmento não havia como recuperá-lo e, quando isso ocorresse, o participante deveria continuar seguindo com a pesquisa até o novo grupo de segmentos.").print().css("margin-bottom", "1em"),
+  newText("Tal informação era importante, tendo em vista que o participante se sentia obrigado a observar cada um dos segmentos em cada uma das expressões.").print().css("margin-bottom", "1em"),
+  newText("Todos os participantes, sem exceção, se mostraram comprometidos ao participarem da pesquisa e a todos eles foram emitidos um certificado de participação para ser utilizado como atividade extracurricular.").print().css("margin-bottom", "1em"),
+ 
+    newButton("btnIniciar", "Iniciar").print().wait() // Aguarda o botão "Iniciar" ser clicado
+);
+
+
+
+         
+         
+
+// FINAL
+newTrial(
+    newButton("Concluir experimento")
+        .print()
+        .wait()
+)
+
+
+
