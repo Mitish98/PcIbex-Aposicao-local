@@ -156,7 +156,7 @@ newTrial("questionario",
          
         
          ,
-         newText("interpretação", "Qual é a sua interpretação da frase abaixo?")
+         newText("interpretação", "Na frase 'O Samuel viu o parente dos funcionários, que alegres, se vestiram de rosa.' quem estava alegre?")
          .cssContainer({"margin-bottom":"1em"}),
     
          newScale("naturalidadeResposta", "<p style=font-size:20>opcaoa</p>", "<p style=font-size:20>opcaob</p>")
@@ -167,7 +167,7 @@ newTrial("questionario",
          .print()
          .wait()
          , 
-         newText("frase1", "Qual é a sua interpretação da primeira frase abaixo?")
+         newText("frase1", "Na frase 'O João ouviu os operários do eletricista, que cansados, descansavam tranquilamente.' quem estava cansado?")
     .cssContainer({"margin-bottom": "1em"}),
 
 newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
@@ -179,7 +179,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     .wait()
     ,
     
-    newText("frase1", "Qual é a sua interpretação da primeira frase abaixo?")
+    newText("frase1", "Na frase 'O Everton ouviu os assistentes do chefe, que chateados, foram embora.' quem estava chateado?")
     .cssContainer({"margin-bottom": "1em"}),
 
 newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
@@ -191,7 +191,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     .wait()
     ,
     
-    newText("frase1", "Qual é a sua interpretação da primeira frase abaixo?")
+    newText("frase1", "Na frase 'O Ítalo viu o amigo dos patrões, que distraído, caiu na piscina.' quem estava distraído?")
     .cssContainer({"margin-bottom": "1em"}),
 
 newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
@@ -203,7 +203,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     .wait()
     ,
     
-    newText("frase1", "Qual é a sua interpretação da primeira frase abaixo?")
+    newText("frase1", "Na frase 'O Pedro ouviu os ajudantes do pintor, que contente, dançava animadamente.' quem estava contente?")
     .cssContainer({"margin-bottom": "1em"}),
 
 newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
@@ -215,7 +215,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     .wait()
     ,
     
-    newText("frase1", "Qual é a sua interpretação da primeira frase abaixo?")
+    newText("frase1", "Na frase 'O Neiva ouviu o auxiliar dos pedreiros, que zangado, brigava loucamente.' quem estava zangado?")
     .cssContainer({"margin-bottom": "1em"}),
 
 newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
@@ -227,7 +227,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     .wait()
     ,
     
-    newText("frase1", "Qual é a sua interpretação da primeira frase abaixo?")
+    newText("frase1", "Na frase 'A Ana viu o cabeleireiro dos irmãos, que felizes, penteavam seu cabelo.' quem estava feliz?")
     .cssContainer({"margin-bottom": "1em"}),
 
 newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
@@ -239,7 +239,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     .wait()
     ,
     
-    newText("frase1", "Qual é a sua interpretação da primeira frase abaixo?")
+    newText("frase1", "Na frase 'Ontem à noite, meu irmão paquerou o filho do dentista que morreu.' quem morreu?")
     .cssContainer({"margin-bottom": "1em"}),
 
 newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
@@ -261,7 +261,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
         .log()
         ,
         
-    newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+    newText("Ana chamou o primo do Daniel que viajou agora mesmo.")
         .print()
         .center()
         .css("font-size", "20px")
@@ -275,7 +275,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
         .print()
         .log()
     ,
-     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+     newText("A Kombi trouxe a paciente do médico que foi pago pelo mercado.")
         .print()
         .center()
         .css("font-size", "20px")
@@ -291,7 +291,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
         .log()
     ,
     
-     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+     newText("O Samuel viu o parente dos funcionários, que alegres, se vestiram de rosa.")
         .print()
         .center()
         .css("font-size", "20px")
@@ -307,7 +307,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
         .log()
     ,
     
-     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+     newText("João ouviu os operários do eletricista, que cansados, descansavam tranquilamente.")
         .print()
         .center()
         .css("font-size", "20px")
@@ -323,7 +323,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
         .log()
     ,
     
-     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+     newText("Everton ouviu os assistentes do chefe, que chateados, foram embora.")
         .print()
         .center()
         .css("font-size", "20px")
@@ -339,7 +339,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
         .log()
     ,
     
-     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+     newText("Ítalo viu o amigo dos patrões, que distraído, caiu na piscina.")
         .print()
         .center()
         .css("font-size", "20px")
@@ -355,7 +355,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
         .log()
     ,
     
-     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+     newText("Pedro ouviu os ajudantes do pintor, que contente, dançava animadamente.")
         .print()
         .center()
         .css("font-size", "20px")
@@ -371,7 +371,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
         .log()
     ,
     
-     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+     newText("Neiva ouviu o auxiliar dos pedreiros, que zangado, brigava loucamente.")
         .print()
         .center()
         .css("font-size", "20px")
@@ -387,7 +387,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
         .log()
     ,
     
-     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+     newText("Ana viu o cabeleireiro dos irmãos, que felizes, penteavam seu cabelo.")
         .print()
         .center()
         .css("font-size", "20px")
@@ -403,7 +403,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
         .log()
     ,
     
-     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+     newText("O Marcos falou com o primo dos empresários, que furioso, bateu na mesa.")
         .print()
         .center()
         .css("font-size", "20px")
@@ -419,7 +419,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
         .log()
     ,
     
-     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+     newText("O Carlos viu as plantas da amiga, que formosa, abrochava flores.")
         .print()
         .center()
         .css("font-size", "20px")
@@ -428,14 +428,14 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
         .log()
     ,
     
-    newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
+    newScale("aceitabilidade2", 5) 
         .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
         .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
         .print()
         .log()
     ,
     
-     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+     newText("A Isabela encontrou os cães do amigo, que animados, abanavam o rabo")
         .print()
         .center()
         .css("font-size", "20px")
@@ -444,7 +444,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
         .log()
         ,
     
-     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+     newText("O Rodrigo viu o farol dos ônibus, que quebrados, não poderiam funcionar")
         .print()
         .center()
         .css("font-size", "20px")
@@ -453,14 +453,14 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
         .log()
     ,
     
-    newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
+    newScale("aceitabilidade2", 5) 
         .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
         .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
         .print()
         .log()
     ,
     
-     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+     newText("A Elizabete viu a gata das senhoras, que cansada, deitou.")
         .print()
         .center()
         .css("font-size", "20px")
@@ -469,7 +469,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
         .log()
     ,
     
-    newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
+    newScale("aceitabilidade2", 5) 
         .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
         .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
         .print()
@@ -501,19 +501,3 @@ newTrial("agradecimento",
  
     newButton("btnIniciar", "Iniciar").print().wait() // Aguarda o botão "Iniciar" ser clicado
 );
-
-
-
-         
-         
-
-
-
-    
-
-
-
-         
-         
-
-
