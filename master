@@ -6,51 +6,14 @@ PennController.ResetPrefix(null);
 // BARRA DE PROGRESSO
 var progressBarText = "PROGRESSO";
 
-
-// TCLE
-
-newTrial(
-    
-    newText("<h1>Termo de Consentimento de Pesquisa (TCLE)</h1>")
-        .print()
-    ,
-    newText("Antes de começar o experimento, pedimos que você leia cuidadosamente as informações a seguir e dê seu consentimento para participar da pesquisa.").print().css("margin-bottom", "1em"),
-  newText("1. Finalidade do Estudo").settings.bold().print().css("margin-bottom", "1em"),
-  newText("O objetivo desse experimento é analisar o processamento de metáforas nominais do Português brasileiro.").print().css("margin-bottom", "1em"),
-  newText("2. Procedimentos do Estudo").settings.bold().print().css("margin-bottom", "1em"),
-  newText("Ao longo desse experimento, os(as) participantes deverão ler frases separadamente e avaliar a familiaridade e o uso no dia a dia para cada uma delas.").print().css("margin-bottom", "1em"),
-  newText("3. Confidencialidade e Privacidade").settings.bold().print().css("margin-bottom", "1em"),
-  newText("Os dados coletados por esse estudo serão usados exclusivamente para fins de estudo durante a disciplina de Psicolinguística na Universidade Federal de Santa Catarina.").print().css("margin-bottom", "1em"),
-  newText("4. Voluntariedade e Retirada do Consentimento").settings.bold().print().css("margin-bottom", "1em"),
-  newText("A participação é voluntária e os(as) participantes têm o direito de retirar seu consentimento a qualquer momento, sem penalidades.").print().css("margin-bottom", "1em"),
-  newText("5. Benefícios e Riscos").settings.bold().print().css("margin-bottom", "1em"),
-  newText("Os resultados desse experimento esperam coletar dados importantes para o estudo das metáforas do Português Brasileiro, servindo para o conhecimento da língua.").print().css("margin-bottom", "1em"),
-  newText("6. Esclarecimento de Dúvidas").settings.bold().print().css("margin-bottom", "1em"),
-  newText("Em caso de dúvidas ou outras informações, escreva uma mensagem para o e-mail matheus_iotti98@hotmail.com.").print().css("margin-bottom", "1em"),
-  newText("Ao continuar com o experimento, você declara que leu e entendeu o Termo de Consentimento de Pesquisa e concorda em participar voluntariamente.").print().css("margin-bottom", "1em"),
-  newButton("Continuar").print().wait() // Aguarda até que o botão "Continuar" seja clicado
-)
-    newButton("Continuar")
-        .print()
-        .wait() // Aguarda até que o botão "Continuar" seja clicado
-        
 // Trial das instruções de aplicação do experimento
 newTrial("instruções iniciais", 
     newText("<h1>Instruções iniciais</h1>").print(),
-    newText("Neste experimento, você irá... (insira suas instruções aqui)").print(),
-    newText("As sessões de aplicação dos experimentos foram todas realizadas em um único equipamento notebook e ocorreram em diversos locais dos quatro campus visitados da UFF. O ambiente para que fosse realizada a sessão deveria ser tranquilo, onde o participante não tivesse sua atenção voltada para outro evento.").print().css("margin-bottom", "1em"),
-  newText("Desta feita, os locais eram pré-selecionados, sendo que em alguns casos foram disponibilizadas salas específicas para aplicação do experimento. Cada sessão reunia apenas um participante por vez, sendo que este, antes de iniciar as tarefas, preenchia um formulário com seus dados pessoais e assinava um Termo de Consentimento Livre e Esclarecido, assentindo em participar da pesquisa.").print().css("margin-bottom", "1em"),
-  newText("Após os procedimentos de preenchimento de formulários e assentimento, o participante sentava-se à frente do notebook e a ele eram dadas as explicações de como seria a aplicação do teste (era informado que a tecla de espaço, pintada de amarelo, servia para avançar nos segmentos das expressões até a frase se completar, enquanto a tecla ‘L’, pintada de vermelho, significava ‘Não’ à resposta, enquanto a tecla ‘S’, pintada de verde, significava ‘Sim’ à resposta).").print().css("margin-bottom", "1em"),
-  newText("Para que não houvesse qualquer dúvida durante a realização dos testes, foi realizada uma tarefa de aquecimento de modo que o participante se inteirasse de como seria o seu comportamento durante a aplicação da pesquisa. Durante esse aquecimento, o participante era informado de que não se tratava de uma pesquisa de opinião, mas sim uma análise de interpretação refinada de texto, sendo assim, as respostas ‘sim’ ou ‘não’ deveriam estar alinhadas com a expressão lida anteriormente e não com as suas convicções pessoais.").print().css("margin-bottom", "1em"),
-  newText("Em seguida ao aquecimento, dando seu consentimento ao prosseguimento do experimento, o participante iniciava a tarefa, que era fazer a leitura, em três segmentos, de uma expressão e, em seguida, responder ‘sim’ ou ‘não’ a uma pergunta apresentada.").print().css("margin-bottom", "1em"),
-  newText("As frases eram apresentadas em ordem aleatória a cada participante, devido ao procedimento de randomização automática programado para o experimento, de modo que não se tornava possível encontrar algum padrão de distribuição dos estímulos experimentais, de controle e distratores.").print().css("margin-bottom", "1em"),
-  newText("Como havia dois grupos formados num quadrado latino, os participantes integravam um grupo ou outro conforme a necessidade de equilibrar a quantidade de homens e mulheres em cada um dos grupos. Tal ação era definida a cada rodada do experimento, de modo que houve um controle adequado do total de participantes, distribuídos harmonicamente entre si.").print().css("margin-bottom", "1em"),
-  newText("É importante frisar que os participantes tomavam conhecimento que, durante a leitura segmentada autocadenciada, era necessária toda a atenção ao que estava sendo lido uma vez que, depois de passado um segmento não havia como recuperá-lo e, quando isso ocorresse, o participante deveria continuar seguindo com a pesquisa até o novo grupo de segmentos.").print().css("margin-bottom", "1em"),
-  newText("Tal informação era importante, tendo em vista que o participante se sentia obrigado a observar cada um dos segmentos em cada uma das expressões.").print().css("margin-bottom", "1em"),
-  newText("Todos os participantes, sem exceção, se mostraram comprometidos ao participarem da pesquisa e a todos eles foram emitidos um certificado de participação para ser utilizado como atividade extracurricular.").print().css("margin-bottom", "1em"),
- 
+    newText("Esse experimento foi divido em três etapas programadas para durarem de 30 a 45 minutos. Por isso, certifique-se de estar acomodado(a) para garantir concentração nas respostas durante esse período. ").print().css("margin-bottom", "1em"),
+  newText("Preste atenção às orientações da primeira etapa, pois as demais serão dadas  posteriormente. Ao clicar no botâo 'Iniciar' você irá dar inicio à primeira etapa do experimento, programada como uma etapa de leitura interativa, na qual você terá que pressionar a tecla [SPACE] na medida em que ler e compreender cada palavra na tela, que juntas formam uma frase. Ao todo, foram divididas 48 frases que não poderão ser lidas de novo na primeira etapa. Lembre-se de pressionar a tecla [SPACE] somente quando ler a frase e compreender o sentido dela até então criado." ).print().css("margin-bottom", "1em"),
+  newText("Após a conclusão da etapa de leitura interativa, você será direcionado(a) às orientações da segunda e terceira etapas respectivamente. Portanto, aperte o botão 'Iniciar' para dar início à primeira etapa assim que você estiver pronto(a)" ).print().css("margin-bottom", "1em"),
     newButton("btnIniciar", "Iniciar").print().wait() // Aguarda o botão "Iniciar" ser clicado
-);
+)
 
 // CÓDIGO PARA RODAR LEITURA AUTOMONITORADA
 
@@ -99,17 +62,11 @@ Template("erebosalvos - exemplodealvos.csv.csv", row =>
 // Instruções do questionário
 newTrial("instruções do questionário", 
     newText("<h1>Instruções do questionário </h1>").print(),
-    newText("Neste experimento, você irá... (insira suas instruções aqui)").print(),
-    newText("As sessões de aplicação dos experimentos foram todas realizadas em um único equipamento notebook e ocorreram em diversos locais dos quatro campus visitados da UFF. O ambiente para que fosse realizada a sessão deveria ser tranquilo, onde o participante não tivesse sua atenção voltada para outro evento.").print().css("margin-bottom", "1em"),
-  newText("Desta feita, os locais eram pré-selecionados, sendo que em alguns casos foram disponibilizadas salas específicas para aplicação do experimento. Cada sessão reunia apenas um participante por vez, sendo que este, antes de iniciar as tarefas, preenchia um formulário com seus dados pessoais e assinava um Termo de Consentimento Livre e Esclarecido, assentindo em participar da pesquisa.").print().css("margin-bottom", "1em"),
-  newText("Após os procedimentos de preenchimento de formulários e assentimento, o participante sentava-se à frente do notebook e a ele eram dadas as explicações de como seria a aplicação do teste (era informado que a tecla de espaço, pintada de amarelo, servia para avançar nos segmentos das expressões até a frase se completar, enquanto a tecla ‘L’, pintada de vermelho, significava ‘Não’ à resposta, enquanto a tecla ‘S’, pintada de verde, significava ‘Sim’ à resposta).").print().css("margin-bottom", "1em"),
-  newText("Para que não houvesse qualquer dúvida durante a realização dos testes, foi realizada uma tarefa de aquecimento de modo que o participante se inteirasse de como seria o seu comportamento durante a aplicação da pesquisa. Durante esse aquecimento, o participante era informado de que não se tratava de uma pesquisa de opinião, mas sim uma análise de interpretação refinada de texto, sendo assim, as respostas ‘sim’ ou ‘não’ deveriam estar alinhadas com a expressão lida anteriormente e não com as suas convicções pessoais.").print().css("margin-bottom", "1em"),
-  newText("Em seguida ao aquecimento, dando seu consentimento ao prosseguimento do experimento, o participante iniciava a tarefa, que era fazer a leitura, em três segmentos, de uma expressão e, em seguida, responder ‘sim’ ou ‘não’ a uma pergunta apresentada.").print().css("margin-bottom", "1em"),
-  newText("As frases eram apresentadas em ordem aleatória a cada participante, devido ao procedimento de randomização automática programado para o experimento, de modo que não se tornava possível encontrar algum padrão de distribuição dos estímulos experimentais, de controle e distratores.").print().css("margin-bottom", "1em"),
-  newText("Como havia dois grupos formados num quadrado latino, os participantes integravam um grupo ou outro conforme a necessidade de equilibrar a quantidade de homens e mulheres em cada um dos grupos. Tal ação era definida a cada rodada do experimento, de modo que houve um controle adequado do total de participantes, distribuídos harmonicamente entre si.").print().css("margin-bottom", "1em"),
-  newText("É importante frisar que os participantes tomavam conhecimento que, durante a leitura segmentada autocadenciada, era necessária toda a atenção ao que estava sendo lido uma vez que, depois de passado um segmento não havia como recuperá-lo e, quando isso ocorresse, o participante deveria continuar seguindo com a pesquisa até o novo grupo de segmentos.").print().css("margin-bottom", "1em"),
-  newText("Tal informação era importante, tendo em vista que o participante se sentia obrigado a observar cada um dos segmentos em cada uma das expressões.").print().css("margin-bottom", "1em"),
-  newText("Todos os participantes, sem exceção, se mostraram comprometidos ao participarem da pesquisa e a todos eles foram emitidos um certificado de participação para ser utilizado como atividade extracurricular.").print().css("margin-bottom", "1em"),
+
+    newText("Nessa etapa, você irá interagir novamente com as frases lidas no formato de um questionário. Agora, com mais tempo, você irá ler as frases para optar por uma das alternativas que responde à pergunta.").print().css("margin-bottom", "1em"),
+  newText("A etapa está programada para durar de 15 à 20 minutos. Portanto, acomode-se para garantir concentração durante esse período.").print().css("margin-bottom", "1em"),
+  
+  newText("Clique no botão iniciar quando estiver preparado(a) para dar inicío à segunda etapa").print().css("margin-bottom", "1em"),
     newButton("btnIniciar", "Iniciar").print().wait() // Aguarda o botão "Iniciar" ser clicado
 );
 
@@ -157,9 +114,9 @@ newTrial("questionario",
         
          ,
          newText("interpretação", "Na frase 'O Samuel viu o parente dos funcionários, que alegres, se vestiram de rosa.' quem estava alegre?")
-         .cssContainer({"margin-bottom":"1em"}),
-    
-         newScale("naturalidadeResposta", "<p style=font-size:20>opcaoa</p>", "<p style=font-size:20>opcaob</p>")
+         .cssContainer({"margin-bottom":"1em", "margin-top":"1em"}),
+
+         newScale("naturalidadeResposta", "<p style=font-size:20>o parente</p>", "<p style=font-size:20>os funcionários</p>")
          .cssContainer({"margin-bottom":"1em"})
          .labelsPosition("right")
          .vertical()
@@ -170,7 +127,7 @@ newTrial("questionario",
          newText("frase1", "Na frase 'O João ouviu os operários do eletricista, que cansados, descansavam tranquilamente.' quem estava cansado?")
     .cssContainer({"margin-bottom": "1em"}),
 
-newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
+newScale("resposta1", "<p style='font-size:20px;'>os operários</p>", "<p style='font-size:20px;'>o eletricista</p>")
     .cssContainer({"margin-bottom": "1em"})
     .labelsPosition("right")
     .vertical()
@@ -182,7 +139,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     newText("frase1", "Na frase 'O Everton ouviu os assistentes do chefe, que chateados, foram embora.' quem estava chateado?")
     .cssContainer({"margin-bottom": "1em"}),
 
-newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
+newScale("resposta1", "<p style='font-size:20px;'>os assistentes</p>", "<p style='font-size:20px;'>o chefe</p>")
     .cssContainer({"margin-bottom": "1em"})
     .labelsPosition("right")
     .vertical()
@@ -194,7 +151,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     newText("frase1", "Na frase 'O Ítalo viu o amigo dos patrões, que distraído, caiu na piscina.' quem estava distraído?")
     .cssContainer({"margin-bottom": "1em"}),
 
-newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
+newScale("resposta1", "<p style='font-size:20px;'>o amigo</p>", "<p style='font-size:20px;'>os patrões</p>")
     .cssContainer({"margin-bottom": "1em"})
     .labelsPosition("right")
     .vertical()
@@ -206,7 +163,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     newText("frase1", "Na frase 'O Pedro ouviu os ajudantes do pintor, que contente, dançava animadamente.' quem estava contente?")
     .cssContainer({"margin-bottom": "1em"}),
 
-newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
+newScale("resposta1", "<p style='font-size:20px;'>os ajudantes</p>", "<p style='font-size:20px;'>o pintor</p>")
     .cssContainer({"margin-bottom": "1em"})
     .labelsPosition("right")
     .vertical()
@@ -218,7 +175,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     newText("frase1", "Na frase 'O Neiva ouviu o auxiliar dos pedreiros, que zangado, brigava loucamente.' quem estava zangado?")
     .cssContainer({"margin-bottom": "1em"}),
 
-newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
+newScale("resposta1", "<p style='font-size:20px;'>os ajudantes</p>", "<p style='font-size:20px;'>do pintor</p>")
     .cssContainer({"margin-bottom": "1em"})
     .labelsPosition("right")
     .vertical()
@@ -230,7 +187,7 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     newText("frase1", "Na frase 'A Ana viu o cabeleireiro dos irmãos, que felizes, penteavam seu cabelo.' quem estava feliz?")
     .cssContainer({"margin-bottom": "1em"}),
 
-newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
+newScale("resposta1", "<p style='font-size:20px;'>o cabeleireiro</p>", "<p style='font-size:20px;'>os irmãos</p>")
     .cssContainer({"margin-bottom": "1em"})
     .labelsPosition("right")
     .vertical()
@@ -242,11 +199,10 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     newText("frase1", "Na frase 'Ontem à noite, meu irmão paquerou o filho do dentista que morreu.' quem morreu?")
     .cssContainer({"margin-bottom": "1em"}),
 
-newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
+newScale("resposta1", "<p style='font-size:20px;'>o filho</p>", "<p style='font-size:20px;'>o dentista</p>")
     .cssContainer({"margin-bottom": "1em"})
     .labelsPosition("right")
     .vertical()
-    .log()
     .print()
     .wait()
     
@@ -256,14 +212,12 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     newTrial("likert",
     newText("<h1>Classifique as frases abaixo:</h1>")
     .print()
-        .center()
         .css("margin-bottom", "20px")
         .log()
         ,
         
     newText("Ana chamou o primo do Daniel que viajou agora mesmo.")
         .print()
-        .center()
         .css("font-size", "20px")
         .css("margin-bottom", "20px")
         .log()
@@ -271,13 +225,12 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     
     newScale("aceitabilidade", 5) // Criar uma escala Likert com 7 pontos
         .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
-        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .settings.labels(["Incerto", "Duvidoso", "Neutro", "Claro", "Muito claro"]) // Definir os rótulos para cada ponto da escala
         .print()
         .log()
     ,
      newText("A Kombi trouxe a paciente do médico que foi pago pelo mercado.")
         .print()
-        .center()
         .css("font-size", "20px")
         .css("margin-bottom", "20px")
         .css("margin-top","20px")
@@ -286,14 +239,13 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     
     newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
         .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
-        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .settings.labels(["Incerto", "Duvidoso", "Neutro", "Claro", "Muito claro"]) // Definir os rótulos para cada ponto da escala
         .print()
         .log()
     ,
     
      newText("O Samuel viu o parente dos funcionários, que alegres, se vestiram de rosa.")
         .print()
-        .center()
         .css("font-size", "20px")
         .css("margin-bottom", "20px")
         .css("margin-top","20px")
@@ -302,14 +254,13 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     
     newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
         .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
-        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .settings.labels(["Incerto", "Duvidoso", "Neutro", "Claro", "Muito claro"]) // Definir os rótulos para cada ponto da escala
         .print()
         .log()
     ,
     
      newText("João ouviu os operários do eletricista, que cansados, descansavam tranquilamente.")
         .print()
-        .center()
         .css("font-size", "20px")
         .css("margin-bottom", "20px")
         .css("margin-top","20px")
@@ -318,14 +269,13 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     
     newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
         .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
-        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .settings.labels(["Incerto", "Duvidoso", "Neutro", "Claro", "Muito claro"]) // Definir os rótulos para cada ponto da escala
         .print()
         .log()
     ,
     
      newText("Everton ouviu os assistentes do chefe, que chateados, foram embora.")
         .print()
-        .center()
         .css("font-size", "20px")
         .css("margin-bottom", "20px")
         .css("margin-top","20px")
@@ -334,14 +284,13 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     
     newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
         .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
-        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .settings.labels(["Incerto", "Duvidoso", "Neutro", "Claro", "Muito claro"]) // Definir os rótulos para cada ponto da escala
         .print()
         .log()
     ,
     
      newText("Ítalo viu o amigo dos patrões, que distraído, caiu na piscina.")
         .print()
-        .center()
         .css("font-size", "20px")
         .css("margin-bottom", "20px")
         .css("margin-top","20px")
@@ -350,14 +299,13 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     
     newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
         .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
-        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .settings.labels(["Incerto", "Duvidoso", "Neutro", "Claro", "Muito claro"]) // Definir os rótulos para cada ponto da escala
         .print()
         .log()
     ,
     
      newText("Pedro ouviu os ajudantes do pintor, que contente, dançava animadamente.")
         .print()
-        .center()
         .css("font-size", "20px")
         .css("margin-bottom", "20px")
         .css("margin-top","20px")
@@ -366,14 +314,13 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     
     newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
         .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
-        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .settings.labels(["Incerto", "Duvidoso", "Neutro", "Claro", "Muito claro"]) // Definir os rótulos para cada ponto da escala
         .print()
         .log()
     ,
     
      newText("Neiva ouviu o auxiliar dos pedreiros, que zangado, brigava loucamente.")
         .print()
-        .center()
         .css("font-size", "20px")
         .css("margin-bottom", "20px")
         .css("margin-top","20px")
@@ -382,14 +329,13 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     
     newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
         .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
-        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .settings.labels(["Incerto", "Duvidoso", "Neutro", "Claro", "Muito claro"]) // Definir os rótulos para cada ponto da escala
         .print()
         .log()
     ,
     
      newText("Ana viu o cabeleireiro dos irmãos, que felizes, penteavam seu cabelo.")
         .print()
-        .center()
         .css("font-size", "20px")
         .css("margin-bottom", "20px")
         .css("margin-top","20px")
@@ -398,14 +344,13 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     
     newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
         .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
-        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .settings.labels(["Incerto", "Duvidoso", "Neutro", "Claro", "Muito claro"]) // Definir os rótulos para cada ponto da escala
         .print()
         .log()
     ,
     
      newText("O Marcos falou com o primo dos empresários, que furioso, bateu na mesa.")
         .print()
-        .center()
         .css("font-size", "20px")
         .css("margin-bottom", "20px")
         .css("margin-top","20px")
@@ -414,14 +359,13 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     
     newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
         .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
-        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .settings.labels(["Incerto", "Duvidoso", "Neutro", "Claro", "Muito claro"]) // Definir os rótulos para cada ponto da escala
         .print()
         .log()
     ,
     
      newText("O Carlos viu as plantas da amiga, que formosa, abrochava flores.")
         .print()
-        .center()
         .css("font-size", "20px")
         .css("margin-bottom", "20px")
         .css("margin-top","20px")
@@ -430,23 +374,28 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     
     newScale("aceitabilidade2", 5) 
         .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
-        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .settings.labels(["Incerto", "Duvidoso", "Neutro", "Claro", "Muito claro"]) // Definir os rótulos para cada ponto da escala
         .print()
         .log()
     ,
     
      newText("A Isabela encontrou os cães do amigo, que animados, abanavam o rabo")
         .print()
-        .center()
         .css("font-size", "20px")
         .css("margin-bottom", "20px")
         .css("margin-top","20px")
         .log()
         ,
+        
+         newScale("aceitabilidade2", 5) 
+        .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
+        .settings.labels(["Incerto", "Duvidoso", "Neutro", "Claro", "Muito claro"]) // Definir os rótulos para cada ponto da escala
+        .print()
+        .log()
+        ,
     
      newText("O Rodrigo viu o farol dos ônibus, que quebrados, não poderiam funcionar")
         .print()
-        .center()
         .css("font-size", "20px")
         .css("margin-bottom", "20px")
         .css("margin-top","20px")
@@ -455,14 +404,13 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     
     newScale("aceitabilidade2", 5) 
         .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
-        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .settings.labels(["Incerto", "Duvidoso", "Neutro", "Claro", "Muito claro"]) // Definir os rótulos para cada ponto da escala
         .print()
         .log()
     ,
     
      newText("A Elizabete viu a gata das senhoras, que cansada, deitou.")
         .print()
-        .center()
         .css("font-size", "20px")
         .css("margin-bottom", "20px")
         .css("margin-top","20px")
@@ -471,15 +419,15 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
     
     newScale("aceitabilidade2", 5) 
         .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
-        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .settings.labels(["Incerto", "Duvidoso", "Neutro", "Claro", "Muito claro"]) // Definir os rótulos para cada ponto da escala
         .print()
         .log()
     ,
     
     
     newButton("Próxima etapa")
+        .css("margin-top","20px")
         .print()
-        .center()
         .log()
         .wait()
 )
@@ -487,17 +435,15 @@ newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='fon
 // Conclusão
 newTrial("agradecimento", 
     newText("<h1>Agradecimentos!</h1>").print(),
-    newText("Neste experimento, você irá... (insira suas instruções aqui)").print(),
-    newText("As sessões de aplicação dos experimentos foram todas realizadas em um único equipamento notebook e ocorreram em diversos locais dos quatro campus visitados da UFF. O ambiente para que fosse realizada a sessão deveria ser tranquilo, onde o participante não tivesse sua atenção voltada para outro evento.").print().css("margin-bottom", "1em"),
-  newText("Desta feita, os locais eram pré-selecionados, sendo que em alguns casos foram disponibilizadas salas específicas para aplicação do experimento. Cada sessão reunia apenas um participante por vez, sendo que este, antes de iniciar as tarefas, preenchia um formulário com seus dados pessoais e assinava um Termo de Consentimento Livre e Esclarecido, assentindo em participar da pesquisa.").print().css("margin-bottom", "1em"),
-  newText("Após os procedimentos de preenchimento de formulários e assentimento, o participante sentava-se à frente do notebook e a ele eram dadas as explicações de como seria a aplicação do teste (era informado que a tecla de espaço, pintada de amarelo, servia para avançar nos segmentos das expressões até a frase se completar, enquanto a tecla ‘L’, pintada de vermelho, significava ‘Não’ à resposta, enquanto a tecla ‘S’, pintada de verde, significava ‘Sim’ à resposta).").print().css("margin-bottom", "1em"),
-  newText("Para que não houvesse qualquer dúvida durante a realização dos testes, foi realizada uma tarefa de aquecimento de modo que o participante se inteirasse de como seria o seu comportamento durante a aplicação da pesquisa. Durante esse aquecimento, o participante era informado de que não se tratava de uma pesquisa de opinião, mas sim uma análise de interpretação refinada de texto, sendo assim, as respostas ‘sim’ ou ‘não’ deveriam estar alinhadas com a expressão lida anteriormente e não com as suas convicções pessoais.").print().css("margin-bottom", "1em"),
-  newText("Em seguida ao aquecimento, dando seu consentimento ao prosseguimento do experimento, o participante iniciava a tarefa, que era fazer a leitura, em três segmentos, de uma expressão e, em seguida, responder ‘sim’ ou ‘não’ a uma pergunta apresentada.").print().css("margin-bottom", "1em"),
-  newText("As frases eram apresentadas em ordem aleatória a cada participante, devido ao procedimento de randomização automática programado para o experimento, de modo que não se tornava possível encontrar algum padrão de distribuição dos estímulos experimentais, de controle e distratores.").print().css("margin-bottom", "1em"),
-  newText("Como havia dois grupos formados num quadrado latino, os participantes integravam um grupo ou outro conforme a necessidade de equilibrar a quantidade de homens e mulheres em cada um dos grupos. Tal ação era definida a cada rodada do experimento, de modo que houve um controle adequado do total de participantes, distribuídos harmonicamente entre si.").print().css("margin-bottom", "1em"),
-  newText("É importante frisar que os participantes tomavam conhecimento que, durante a leitura segmentada autocadenciada, era necessária toda a atenção ao que estava sendo lido uma vez que, depois de passado um segmento não havia como recuperá-lo e, quando isso ocorresse, o participante deveria continuar seguindo com a pesquisa até o novo grupo de segmentos.").print().css("margin-bottom", "1em"),
-  newText("Tal informação era importante, tendo em vista que o participante se sentia obrigado a observar cada um dos segmentos em cada uma das expressões.").print().css("margin-bottom", "1em"),
-  newText("Todos os participantes, sem exceção, se mostraram comprometidos ao participarem da pesquisa e a todos eles foram emitidos um certificado de participação para ser utilizado como atividade extracurricular.").print().css("margin-bottom", "1em"),
- 
-    newButton("btnIniciar", "Iniciar").print().wait() // Aguarda o botão "Iniciar" ser clicado
+    newText("Muito obrigado pela sua participação no experimento. Sua contribuição foi fundamental para a nossa coleta de dados e será fundamental para a nossa pesquisa.").print().css("margin-bottom", "1em"),
+  
+    newButton("btnIniciar", "Concluir experimento")
+    .css("margin-top","20px")
+    .print()
+    .wait() // Aguarda o botão "Iniciar" ser clicado
+    
 );
+
+
+
+         
