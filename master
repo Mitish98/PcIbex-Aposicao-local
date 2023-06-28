@@ -59,7 +59,7 @@ Template("erebosalvos - exemplodealvos.csv.csv", row =>
                     newController("DashedSentence", {
                       s: row.sentence,
                       display: "in place",
-                      blankText: "+"
+                      blankText: "Aperte [SPACE] para ler a próxima frase"
                     })
                     .css("font-size", "35px")
                     .cssContainer({"margin-top":"10em","margin-bottom":"10em"})
@@ -67,16 +67,9 @@ Template("erebosalvos - exemplodealvos.csv.csv", row =>
                     .print()
                     .log()
                     .wait()
-                    .remove()
-                    ,
-                    newText("perguntaPratica","XYZ?")
-                    .css("font-size", "35px")
-                    .cssContainer({"margin-top":"10em","margin-bottom":"5em"})
-                    .center()
-                    .print()
-                    ,
-                    ))
-                    
+                    .remove() 
+             )
+             )
 
 // CÓDIGO PARA A LEITURA AUTOMONITORADA DAS SENTENÇAS DISTRATORAS
                 Template("erebosdistratora - exemplodedistratora.csv.csv", row =>
@@ -120,21 +113,14 @@ newTrial("instruções do questionário",
     newButton("btnIniciar", "Iniciar").print().wait() // Aguarda o botão "Iniciar" ser clicado
 );
 
-// Questionário
-newTrial("Questionário", 
-    newText("<h1>Questionário </h1>").print(),
-    newText("Neste experimento, você irá... (insira suas instruções aqui)").print(),
-    newButton("btnIniciar", "Iniciar").print().wait() // Aguarda o botão "Iniciar" ser clicado
-);
 
-// CÓDIGO PARA RODAR O QUESTIONÁRIO - PRECISA SER ADAPTADO CONFORME INTERESSE
 
 newTrial("questionario",
          defaultText
          .print()
          .cssContainer({"font-size":"25px"})
          ,
-         newText("idade", "inseriridadeXYZ")
+         newText("idade", "Idade")
          .cssContainer({"margin-bottom":"1em"})
          ,
          newTextInput("idadeResposta", "")
@@ -157,59 +143,345 @@ newTrial("questionario",
                  .print()
                ))
          ,
-         newText("escolaridade", "inserirescolaridadeXYZ")
+         newText("nascimento", "Cidade de nascimento")
+         .cssContainer({"margin-bottom":"1em"}),
+         newTextInput("Digite a cidade em que você nasceu", "")
          .cssContainer({"margin-bottom":"1em"})
+         .css("font-size", "25px")
+         .lines(0)
+         .size(70, 30)
+         .log()
+         .print()
+         .wait()
+         
+        
          ,
-         newScale("escolaridadeResposta", "<p style=font-size:20>opcao1</p>", "<p style=font-size:20>opcao2</p>", 
-                  "<p style=font-size:20>opcao4</p>", "<p style=font-size:20>opcao3</p>",
-                  "<p style=font-size:20>opcao6</p>", "<p style=font-size:20>opcao7</p>")
+         newText("interpretação", "Qual é a sua interpretação da frase abaixo?")
+         .cssContainer({"margin-bottom":"1em"}),
+    
+         newScale("naturalidadeResposta", "<p style=font-size:20>opcaoa</p>", "<p style=font-size:20>opcaob</p>")
          .cssContainer({"margin-bottom":"1em"})
          .labelsPosition("right")
          .vertical()
          .log()
          .print()
          .wait()
-         ,
-         newText("naturalidade", "perguntanaturalidadeXYZ")
-         .cssContainer({"margin-bottom":"1em"})
-         ,
-         newScale("naturalidadeResposta", "<p style=font-size:20>opcaoa</p>", "<p style=font-size:20>opcaob</p>", 
-                  "<p style=font-size:20>opcaoc</p>")
-         .cssContainer({"margin-bottom":"1em"})
-         .labelsPosition("right")
-         .vertical()
-         .log()
-         .print()
-         .wait()
-         ,
-         newText("língua", "perguntalinguaXYZ")
-         .cssContainer({"margin-bottom":"1em"})
-         ,
-         newScale("línguaResposta", "<p style=font-size:20>XYZ</p>", "<p style=font-size:20>YZX</p>", "<p style=font-size:20>ZYX</p>" , "<p style=font-size:20>outro</p>")
-         .cssContainer({"margin-bottom":"1em"})
-         .labelsPosition("right")
-         .vertical()
-         .log()
-         .print()
-         .wait()
-         ,
-         newText("morou", "perguntaadicionalXYZ")
-         .cssContainer({"margin-bottom":"1em"})
-         ,
-         newScale("morouResposta", "<p style=font-size:20>Yes</p>", "<p style=font-size:20>No</p>")
-         .cssContainer({"margin-bottom":"1em"})
-         .labelsPosition("right")
-         .vertical()
-         .log()
-         .print()
-         .wait()
-         ,
-         newButton("botao3", "Next")
-         .center()
-         .cssContainer({"margin-top":"3em","margin-bottom":"6em"})
-         .css("font-size", "20px")
-         .print()
-         .wait()
+         , 
+         newText("frase1", "Qual é a sua interpretação da primeira frase abaixo?")
+    .cssContainer({"margin-bottom": "1em"}),
+
+newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
+    .cssContainer({"margin-bottom": "1em"})
+    .labelsPosition("right")
+    .vertical()
+    .log()
+    .print()
+    .wait()
+    ,
+    
+    newText("frase1", "Qual é a sua interpretação da primeira frase abaixo?")
+    .cssContainer({"margin-bottom": "1em"}),
+
+newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
+    .cssContainer({"margin-bottom": "1em"})
+    .labelsPosition("right")
+    .vertical()
+    .log()
+    .print()
+    .wait()
+    ,
+    
+    newText("frase1", "Qual é a sua interpretação da primeira frase abaixo?")
+    .cssContainer({"margin-bottom": "1em"}),
+
+newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
+    .cssContainer({"margin-bottom": "1em"})
+    .labelsPosition("right")
+    .vertical()
+    .log()
+    .print()
+    .wait()
+    ,
+    
+    newText("frase1", "Qual é a sua interpretação da primeira frase abaixo?")
+    .cssContainer({"margin-bottom": "1em"}),
+
+newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
+    .cssContainer({"margin-bottom": "1em"})
+    .labelsPosition("right")
+    .vertical()
+    .log()
+    .print()
+    .wait()
+    ,
+    
+    newText("frase1", "Qual é a sua interpretação da primeira frase abaixo?")
+    .cssContainer({"margin-bottom": "1em"}),
+
+newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
+    .cssContainer({"margin-bottom": "1em"})
+    .labelsPosition("right")
+    .vertical()
+    .log()
+    .print()
+    .wait()
+    ,
+    
+    newText("frase1", "Qual é a sua interpretação da primeira frase abaixo?")
+    .cssContainer({"margin-bottom": "1em"}),
+
+newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
+    .cssContainer({"margin-bottom": "1em"})
+    .labelsPosition("right")
+    .vertical()
+    .log()
+    .print()
+    .wait()
+    ,
+    
+    newText("frase1", "Qual é a sua interpretação da primeira frase abaixo?")
+    .cssContainer({"margin-bottom": "1em"}),
+
+newScale("resposta1", "<p style='font-size:20px;'>opção a</p>", "<p style='font-size:20px;'>opção b</p>")
+    .cssContainer({"margin-bottom": "1em"})
+    .labelsPosition("right")
+    .vertical()
+    .log()
+    .print()
+    .wait()
+    
+)
+
+// ESCALA Likert
+    newTrial("likert",
+    newText("<h1>Classifique as frases abaixo:</h1>")
+    .print()
+        .center()
+        .css("margin-bottom", "20px")
+        .log()
+        ,
+        
+    newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+        .print()
+        .center()
+        .css("font-size", "20px")
+        .css("margin-bottom", "20px")
+        .log()
+    ,
+    
+    newScale("aceitabilidade", 5) // Criar uma escala Likert com 7 pontos
+        .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
+        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .print()
+        .log()
+    ,
+     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+        .print()
+        .center()
+        .css("font-size", "20px")
+        .css("margin-bottom", "20px")
+        .css("margin-top","20px")
+        .log()
+    ,
+    
+    newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
+        .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
+        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .print()
+        .log()
+    ,
+    
+     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+        .print()
+        .center()
+        .css("font-size", "20px")
+        .css("margin-bottom", "20px")
+        .css("margin-top","20px")
+        .log()
+    ,
+    
+    newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
+        .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
+        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .print()
+        .log()
+    ,
+    
+     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+        .print()
+        .center()
+        .css("font-size", "20px")
+        .css("margin-bottom", "20px")
+        .css("margin-top","20px")
+        .log()
+    ,
+    
+    newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
+        .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
+        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .print()
+        .log()
+    ,
+    
+     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+        .print()
+        .center()
+        .css("font-size", "20px")
+        .css("margin-bottom", "20px")
+        .css("margin-top","20px")
+        .log()
+    ,
+    
+    newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
+        .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
+        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .print()
+        .log()
+    ,
+    
+     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+        .print()
+        .center()
+        .css("font-size", "20px")
+        .css("margin-bottom", "20px")
+        .css("margin-top","20px")
+        .log()
+    ,
+    
+    newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
+        .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
+        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .print()
+        .log()
+    ,
+    
+     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+        .print()
+        .center()
+        .css("font-size", "20px")
+        .css("margin-bottom", "20px")
+        .css("margin-top","20px")
+        .log()
+    ,
+    
+    newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
+        .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
+        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .print()
+        .log()
+    ,
+    
+     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+        .print()
+        .center()
+        .css("font-size", "20px")
+        .css("margin-bottom", "20px")
+        .css("margin-top","20px")
+        .log()
+    ,
+    
+    newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
+        .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
+        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .print()
+        .log()
+    ,
+    
+     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+        .print()
+        .center()
+        .css("font-size", "20px")
+        .css("margin-bottom", "20px")
+        .css("margin-top","20px")
+        .log()
+    ,
+    
+    newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
+        .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
+        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .print()
+        .log()
+    ,
+    
+     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+        .print()
+        .center()
+        .css("font-size", "20px")
+        .css("margin-bottom", "20px")
+        .css("margin-top","20px")
+        .log()
+    ,
+    
+    newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
+        .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
+        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .print()
+        .log()
+    ,
+    
+     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+        .print()
+        .center()
+        .css("font-size", "20px")
+        .css("margin-bottom", "20px")
+        .css("margin-top","20px")
+        .log()
+    ,
+    
+    newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
+        .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
+        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .print()
+        .log()
+    ,
+    
+     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+        .print()
+        .center()
+        .css("font-size", "20px")
+        .css("margin-bottom", "20px")
+        .css("margin-top","20px")
+        .log()
+        ,
+    
+     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+        .print()
+        .center()
+        .css("font-size", "20px")
+        .css("margin-bottom", "20px")
+        .css("margin-top","20px")
+        .log()
+    ,
+    
+    newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
+        .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
+        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .print()
+        .log()
+    ,
+    
+     newText("Esta é a seção onde insiro a escala likert para estudar objetivamente a aceitação das metáforas")
+        .print()
+        .center()
+        .css("font-size", "20px")
+        .css("margin-bottom", "20px")
+        .css("margin-top","20px")
+        .log()
+    ,
+    
+    newScale("aceitabilidade2", 5) // Criar uma escala Likert com 7 pontos
+        .settings.labelsPosition("bottom") // Posicionar os rótulos abaixo da escala
+        .settings.labels(["Discordo totalmente", "Discordo", "Um pouco em desacordo", "Neutro", "Um pouco de acordo"]) // Definir os rótulos para cada ponto da escala
+        .print()
+        .log()
+    ,
+    
+    
+    newButton("Próxima etapa")
+        .print()
+        .center()
+        .log()
+        .wait()
 )
 
 // Conclusão
@@ -229,6 +501,15 @@ newTrial("agradecimento",
  
     newButton("btnIniciar", "Iniciar").print().wait() // Aguarda o botão "Iniciar" ser clicado
 );
+
+
+
+         
+         
+
+
+
+    
 
 
 
