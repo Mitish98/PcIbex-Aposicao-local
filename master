@@ -212,9 +212,15 @@ newScale("resposta1", "<p style='font-size:20px;'>o filho</p>", "<p style='font-
     newTrial("likert",
     newText("<h1>Classifique as frases abaixo:</h1>")
     .print()
-        .css("margin-bottom", "20px")
-        .log()
-        ,
+        .css("margin-bottom", "20px"),
+        
+newText("Classifique as frases abaixo de acordo com o grau de clareza interpretativa que você tem de cada uma delas: sendo: "),
+newText("1 - Incerto: Há uma incompatibilidade interpretativa que causa estranheza e incerteza, responsável por uma releitura constante da frase."),
+newText("2 - Duvidoso: A interpretação da frase é duvidosa e dificil de encontrar."),
+newText("3 - Neutro: Há diferentes interpretações igualmente relevantes."),
+newText("4 - Claro: Vejo claramente uma interpretação principal, mas compreendo que há outras possíveis."),
+newText("5 - Muito claro: Vejo claramente uma única interpretação predominante na frase e consegui captá-la rapidamente."),
+        
         
     newText("Ana chamou o primo do Daniel que viajou agora mesmo.")
         .print()
@@ -443,7 +449,5 @@ newTrial("agradecimento",
     .wait() // Aguarda o botão "Iniciar" ser clicado
     
 );
-
-
 
          
